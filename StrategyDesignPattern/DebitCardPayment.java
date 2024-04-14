@@ -4,5 +4,4 @@ public class DebitCardPayment implements PaymentMode{
         //execute Payment using UPI gateway
         System.out.println("Debit Card Payment Initiated");
     }
-
 }

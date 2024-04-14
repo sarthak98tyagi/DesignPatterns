@@ -1,0 +1,19 @@
+Strategy design pattern is a behavioral design pattern that defines a family of algorithms and provides the flexibility to switch algorithms at run time, this helps us to interchange the behavior of an object by giving us the ability to switch algorithms.
+
+When should we use the Strategy Design Pattern?
+Strategy Pattern is used when a task can be implemented using multiple strategies and the strategy implementation should remain abstract for the client.
+
+Implementation:
+Let’s take a real-world scenario for implementing the strategy design pattern. Consider a Payment Service that uses different ways of payment such as UPI, debit card, credit card and net banking. This is a perfect use case for implementing the strategy design pattern as there is a task(Payment) that can be implemented in multiple ways.
+
+Common Interface: First we should define a common interface that should contain the method which should represent common behavior for all implementing classes.
+In our Payment use case, the common interface will be PaymentMode with the common method processPayment.
+
+Concrete Strategy Classes: Create concrete strategy classes implementing the common interface and override the common behavior(method) in their way.
+In our Payment use case, concrete payment strategies will be UPIPayment, CreditCardPayment, DebitCardPayment and NetBankingPayment. All these classes will override the common method processPayment.
+
+Using Strategies: Define a context class with the strategy attribute (composition) and we can change the strategy dynamically using setters.
+In our payment use case, we can define a PaymentService with a PaymentMode attribute and invoke the desired strategy.
+
+Find Complete article on Medium:
+https://medium.com/@sarthaktyagiii/strategy-design-pattern-in-java-46de2bf93c4a

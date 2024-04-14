@@ -4,5 +4,4 @@ public class NetBankingPayment implements PaymentMode{
         //execute Payment using UPI gateway
         System.out.println("Net Banking Payment Initiated");
     }
-
 }

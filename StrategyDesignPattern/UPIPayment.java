@@ -4,5 +4,4 @@ public class UPIPayment implements PaymentMode{
         //execute Payment using UPI gateway
         System.out.println("UPI Payment Initiated");
     }
-
 }
